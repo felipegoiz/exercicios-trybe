@@ -2,10 +2,16 @@
     width: 200px;
     position: absolute;
     z-index: 1;
+    left: 150px;
+    top: 50px;
   }
   
   .goomba {
     width: 100px;
+    position: absolute;
+    z-index: 2;
+    bottom: 200px;
+    left: 250px;
   }
   
   .baloon {
@@ -21,7 +27,7 @@
     position: absolute;
     right: 480px;
     bottom: 325px;
-    z-index: 2;
+    z-index: 3;
     scale: 85%;
   }
   
