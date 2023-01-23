@@ -104,3 +104,104 @@
 // default:
 //   console.log("Informação incorreta");
 // }
+
+// EXERCICIOS - AGORA, A PRATICA
+
+const constanteA = 10;
+const constanteB = -50;
+let operacaoAritimetica = "-";
+
+if (operacaoAritimetica === "+") {
+  if (constanteA > constanteB) {
+    console.log(constanteA +" é maior que " + constanteB + ".");
+  } else if (constanteA === constanteB) {
+    console.log(constanteA +" é igual a " + constanteB + ".");
+  } else {
+    console.log(constanteB +" é maior que " + constanteA + ".");
+  }
+  let resultadoFinal = constanteA + constanteB;
+  if (resultadoFinal > 0) {
+    console.log("Este valor é um número positivo.")
+  } else if (resultadoFinal < 0) {
+    console.log("Este valor é negativo.")
+  } else {
+    console.log("Zero")
+  }
+  console.log("Esta operação é uma adição e o resultado é " + resultadoFinal + ".");
+}
+
+else if (operacaoAritimetica === "-") {
+  if (constanteA > constanteB) {
+    console.log(constanteA +" é maior que " + constanteB + ".");
+  } else if (constanteA === constanteB) {
+    console.log(constanteA +" é igual a " + constanteB + ".");
+  } else {
+    console.log(constanteB +" é maior que " + constanteA + ".");
+  }
+  let resultadoFinal = constanteA - constanteB;
+  if (resultadoFinal > 0) {
+    console.log("Este valor é um número positivo.")
+  } else if (resultadoFinal < 0) {
+    console.log("Este valor é negativo.")
+  } else {
+    console.log("Zero")
+  }
+  console.log("Esta operação é uma subtração e o resultado é " + resultadoFinal + ".");
+}
+
+else if (operacaoAritimetica === "*") {
+  if (constanteA > constanteB) {
+    console.log(constanteA +" é maior que " + constanteB + ".");
+  } else if (constanteA === constanteB) {
+    console.log(constanteA +" é igual a " + constanteB + ".");
+  } else {
+    console.log(constanteB +" é maior que " + constanteA + ".");
+  }
+  let resultadoFinal = constanteA * constanteB;
+  if (resultadoFinal > 0) {
+    console.log("Este valor é um número positivo.")
+  } else if (resultadoFinal < 0) {
+    console.log("Este valor é negativo.")
+  } else {
+    console.log("Zero")
+  }
+  console.log("Esta operação é uma multiplicação e o resultado é " + resultadoFinal + ".");
+}
+
+else if (operacaoAritimetica === "/") {
+  if (constanteA > constanteB) {
+    console.log(constanteA +" é maior que " + constanteB + ".");
+  } else if (constanteA === constanteB) {
+    console.log(constanteA +" é igual a " + constanteB + ".");
+  } else {
+    console.log(constanteB +" é maior que " + constanteA + ".");
+  }
+  let resultadoFinal = constanteA / constanteB;
+  if (resultadoFinal > 0) {
+    console.log("Este valor é um número positivo.")
+  } else if (resultadoFinal < 0) {
+    console.log("Este valor é negativo.")
+  } else {
+    console.log("Zero")
+  }
+  console.log("Esta operação é uma divisão e o resultado é " + resultadoFinal + ".");
+}
+
+else if (operacaoAritimetica === "%") {
+  if (constanteA > constanteB) {
+    console.log(constanteA +" é maior que " + constanteB + ".");
+  } else if (constanteA === constanteB) {
+    console.log(constanteA +" é igual a " + constanteB + ".");
+  } else {
+    console.log(constanteB +" é maior que " + constanteA + ".");
+  }
+  let resultadoFinal = constanteA % constanteB;
+  if (resultadoFinal > 0) {
+    console.log("Este valor é um número positivo.")
+  } else if (resultadoFinal < 0) {
+    console.log("Este valor é negativo.")
+  } else {
+    console.log("Zero")
+  }
+  console.log("Esta operação é uma módulo e o resultado é " + resultadoFinal + ".");
+}
