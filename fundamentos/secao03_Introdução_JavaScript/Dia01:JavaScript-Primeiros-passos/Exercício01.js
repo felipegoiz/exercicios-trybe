@@ -74,12 +74,33 @@
 
 // QUINTA ATIVIDADE
 
-const weekday = "quarta-feira";
+// const weekday = "quarta-feira";
 
-if (weekday === "segunda-feira" || weekday === "terça-feira" || weekday === "quarta-feira" || weekday === "quinta-feira" || weekday === "sexta-feira") {
-  console.log("Oba, mais um dia de aprendizado na Trybe >:D");
-}
+// if (weekday === "segunda-feira" || weekday === "terça-feira" || weekday === "quarta-feira" || weekday === "quinta-feira" || weekday === "sexta-feira") {
+//   console.log("Oba, mais um dia de aprendizado na Trybe >:D");
+// }
 
-else {
-  console.log("FINALMENTE, descanso merecido UwU");
+// else {
+//   console.log("FINALMENTE, descanso merecido UwU");
+// }
+
+// SEXTA ATIVIDADE
+
+let statusCandidato = "Aprovado";
+
+switch(statusCandidato) {
+  case "aprovada":
+  console.log("Parabéns, você foi aprovada(o)!");
+  break;
+
+  case "lista":
+  console.log("Você está na nossa lista de espera");
+  break;
+
+  case "reprovada":
+  console.log("Você foi reprovada(o)");
+  break;
+
+default:
+  console.log("Informação incorreta");
 }
