@@ -1,47 +1,47 @@
-// // // PRIMEIRO EXERCICIO
+// PRIMEIRO EXERCICIO
 
-// // // const myName = "Felipe Goiz";
+// const myName = "Felipe Goiz";
 
-// // // const birthCity = 33;
-// // // let birthYear = 1989;
+// const birthCity = 33;
+// let birthYear = 1989;
 
-// // // console.log(myName);
-// // // console.log(birthCity);
-// // // console.log(birthYear);
+// console.log(myName);
+// console.log(birthCity);
+// console.log(birthYear);
 
-// // // birthYear = 2030;
+// birthYear = 2030;
 
-// // // console.log(birthYear);
+// console.log(birthYear);
 
-// // // SEGUNDO EXERCICIO
+// SEGUNDO EXERCICIO
 
-// // // const base = 5;
-// // // const heigth = 8;
-// // // const area = base * heigth;
+// const base = 5;
+// const heigth = 8;
+// const area = base * heigth;
 
-// // // console.log(area);
+// console.log(area);
 
-// // // const perimeter = 2 * base + 2 * heigth;
+// const perimeter = 2 * base + 2 * heigth;
 
-// // // console.log(perimeter);
+// console.log(perimeter);
 
-// // // TERCEIRO EXERCICIO
+// TERCEIRO EXERCICIO
 
-// // const nota = 70;
+// const nota = 70;
 
-// // if (nota >= 80 && nota <= 100) {
-// //   console.log("Parabéns você faz parte do grupo das pessoas aprovadas!");
-// // }
+// if (nota >= 80 && nota <= 100) {
+//   console.log("Parabéns você faz parte do grupo das pessoas aprovadas!");
+// }
 
-// // else if (nota < 80 && nota >= 60) {
-// //   console.log("Você está na nossa lista de espera.");
-// // }
+// else if (nota < 80 && nota >= 60) {
+//   console.log("Você está na nossa lista de espera.");
+// }
 
-// // else {
-// //   console.log("Infelizmente, você reprovou.");
-// // }
+// else {
+//   console.log("Infelizmente, você reprovou.");
+// }
 
-// // QUARTO EXERCICIO
+// QUARTO EXERCICIO
 
 // const currentHour = 4;
 // let message = "";
@@ -86,21 +86,21 @@
 
 // SEXTA ATIVIDADE
 
-let statusCandidato = "Aprovado";
+// let statusCandidato = "Aprovado";
 
-switch(statusCandidato) {
-  case "aprovada":
-  console.log("Parabéns, você foi aprovada(o)!");
-  break;
+// switch(statusCandidato) {
+//   case "aprovada":
+//   console.log("Parabéns, você foi aprovada(o)!");
+//   break;
 
-  case "lista":
-  console.log("Você está na nossa lista de espera");
-  break;
+//   case "lista":
+//   console.log("Você está na nossa lista de espera");
+//   break;
 
-  case "reprovada":
-  console.log("Você foi reprovada(o)");
-  break;
+//   case "reprovada":
+//   console.log("Você foi reprovada(o)");
+//   break;
 
-default:
-  console.log("Informação incorreta");
-}
+// default:
+//   console.log("Informação incorreta");
+// }
