@@ -221,3 +221,82 @@
 // } else {
 //   console.log("False");
 // }
+
+// EXERCICIOS - AGORA, A PRATICA #03
+
+// const custoProduto = 550;
+// const valorVenda = 100;
+// const lucro = 1000 * (valorVenda - custoProduto * 1.2);
+
+// if (custoProduto < 0 || valorVenda < 0) {
+//   console.log("Erro, valor indefinido.");
+// } else {
+//   if (lucro > 0) {
+//     console.log("Você recebeu R$" + lucro + " de lucro.")
+//   } else {
+//     console.log("Você teve R$" + lucro + " de prejuízo.")
+//   }
+// }
+
+// EXERCICIOS - AGORA, A PRATICA #04
+
+// let salBruto = 3000;
+// let salDedu;
+
+// if (salBruto <= 1556.94) {
+//   salDedu = salBruto * .92;
+//   console.log("R$"+ salDedu + ": salário com INSS já deduzido");
+// } else if (salBruto >= 1556.95 && salBruto <= 2594.92) {
+//   salDedu = salBruto * .91;
+//   console.log("R$"+ salDedu + ": salário com INSS já deduzido");
+// } else if (salBruto >= 2594.93 && salBruto <= 5189.82) {
+//   salDedu = salBruto * .89;
+//   console.log("R$"+ salDedu + ": salário com INSS já deduzido");
+// } else if (salBruto >= 5189.83){
+//   salDedu = salBruto - 570.88;
+//   console.log("R$"+ salDedu + ": salário com INSS já deduzido");
+// }
+// console.log(salDedu);
+
+// if ( 1.903,98 >= salDedu) {
+//   console.log("Isento de Imposto de Renda")
+//   console.log("Resultado: R$ " + salDedu + " .")
+// } else if (salDedu >= 1.903,99 && salDedu <= 2.826,65) {
+//   salDedu = salDedu - ((salDedu * .075) - 142,80);}
+//   console.log(salDedu)
+  // console.log("7.5%: alíquota de imposto de renda");
+  // console.log("R$ 142,80 parcela a se deduzir do imposto.");
+  // console.log("Resultado: R$ " + salDedu + " .");}
+// } else if (salDedu >= 2.826,66 && salDedu <= 3.751,05) {
+//   console.log("15%: alíquota de imposto de renda");
+//   console.log("R$ 354,80 parcela a se deduzir do imposto.");
+//   console.log("Resultado: R$ " + salDedu + " .");
+// } else if (salDedu >= 3.751,06 && salDedu <= 4.664,68) {
+//   salDedu = salDedu * .775;
+//     console.log("22,5%: alíquota de imposto de renda");
+//     console.log("R$ 636,13 parcela a se deduzir do imposto.");
+//     console.log("Resultado: R$ " + salDedu + " .");} 
+// else {
+//   salDedu = salDedu * .725;
+//   console.log("27,5%: alíquota de imposto de renda");
+//   console.log("R$ 869,36 parcela a se deduzir do imposto.");
+//   console.log("Resultado: R$ " + salDedu + " .");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
