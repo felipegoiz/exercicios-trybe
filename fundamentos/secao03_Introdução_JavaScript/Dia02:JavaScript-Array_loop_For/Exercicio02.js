@@ -30,12 +30,35 @@
 //   console.log("valor menor ou igual a 20.")
 // }
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let maioNumero = numbers[0];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let maioNumero = numbers[0];
 
+// for(let index = 1; index<numbers.length;index+=1){
+//   if (numbers[index]> maioNumero){
+//     maioNumero = numbers[index];
+//   }
+// }
+// console.log(maioNumero);
+
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbOdd = 0;
+
+// for(let index = 0; index<numbers.length;index+=1){
+//   if (numbers[index] % 2 !== 0){
+//     numbOdd += 1;
+//   } 
+// }
+// if(numbOdd === 0){
+//   console.log("Nenhum valor ímpar encontrado");
+// } else{
+//   console.log(numbOdd);
+// }
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let menorNumero = numbers[0];
 for(let index = 1; index<numbers.length;index+=1){
-  if (numbers[index]> maioNumero){
-    maioNumero = numbers[index];
+    if (numbers[index] < menorNumero){
+      menorNumero = numbers[index];
+    }
   }
-}
-console.log(maioNumero);
+  console.log(menorNumero);
