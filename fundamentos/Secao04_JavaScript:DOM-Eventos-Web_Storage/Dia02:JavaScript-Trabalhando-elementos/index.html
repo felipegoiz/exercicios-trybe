@@ -65,6 +65,21 @@
       const newTagMain = document.createElement('main');
       newTagMain.className = 'main-content';
       document.body.appendChild(newTagMain);
+      
+      const newTagSectionCenter = document.createElement('section');
+      newTagSectionCenter.className = 'center-content';
+      newTagMain.appendChild(newTagSectionCenter);
+
+      const newTagCenterP = document.createElement('p');
+      newTagSectionCenter.appendChild(newTagCenterP)
+
+      const newTagSectionLeft = document.createElement('section');
+      newTagSectionLeft.className = 'left-content';
+      newTagMain.appendChild(newTagSectionLeft);
+
+      const newTagSectionRight = document.createElement('section');
+      newTagSectionRight.className = 'right-content';
+      newTagMain.appendChild(newTagSectionRight);
     </script>
   </body>
 </html>
