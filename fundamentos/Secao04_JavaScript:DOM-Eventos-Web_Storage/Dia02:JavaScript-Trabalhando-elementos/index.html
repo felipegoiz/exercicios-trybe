@@ -80,6 +80,23 @@
       const newTagSectionRight = document.createElement('section');
       newTagSectionRight.className = 'right-content';
       newTagMain.appendChild(newTagSectionRight);
+
+      const newImageLeft = document.createElement('img');
+      newImageLeft.className = 'small-image';
+      newImageLeft.src = 'https://picsum.photos/200';
+      newTagSectionLeft.appendChild(newImageLeft);
+
+      const newUlList = document.createElement('ul');
+      newTagSectionRight.appendChild(newUlList);
+
+      
+      const ListNumbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let index = 0; index < ListNumbers.length; index +=1){
+        let list = ListNumbers[index];
+        let newListUl = document.createElement('li');
+        newListUl.innerHTML = list;
+        newUlList.appendChild(newListUl);
+      }
     </script>
   </body>
 </html>
