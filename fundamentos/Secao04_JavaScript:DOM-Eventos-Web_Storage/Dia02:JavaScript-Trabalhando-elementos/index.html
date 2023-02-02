@@ -56,9 +56,65 @@
     </style>
   </head>
   <body>
-    <h1></h1>
+
     <script>
+      const newTagH1 = document.createElement('h1');
+      newTagH1.className = 'title';
+      newTagH1.innerHTML = 'TrybeTrip - Agência de Viagens';
+      document.body.appendChild(newTagH1);
+
+      const newTagMain = document.createElement('main');
+      newTagMain.className = 'main-content';
+      newTagMain.style.background = 'green';
+      document.body.appendChild(newTagMain);
       
+      const newTagSectionCenter = document.createElement('section');
+      newTagSectionCenter.className = 'center-content';
+      newTagMain.appendChild(newTagSectionCenter);
+
+      const newTagCenterP = document.createElement('p');
+      newTagSectionCenter.appendChild(newTagCenterP)
+
+      const newTagSectionLeft = document.createElement('section');
+      newTagSectionLeft.className = 'left-content';
+      newTagMain.appendChild(newTagSectionLeft);
+
+      const newTagSectionRight = document.createElement('section');
+      newTagSectionRight.className = 'right-content';
+      newTagMain.appendChild(newTagSectionRight);
+
+      const newImageLeft = document.createElement('img');
+      newImageLeft.className = 'small-image';
+      newImageLeft.src = 'https://picsum.photos/200';
+      newTagSectionLeft.appendChild(newImageLeft);
+
+      const newUlList = document.createElement('ul');
+      newTagSectionRight.appendChild(newUlList);
+
+      const ListNumbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let index = 0; index < ListNumbers.length; index +=1){
+        let list = ListNumbers[index];
+        let newListUl = document.createElement('li');
+        newListUl.innerHTML = list;
+        newUlList.appendChild(newListUl);
+      }
+
+
+      for (let index = 0; index <= 2; index +=1){
+        const newTagsH3 = document.createElement('h3')
+        newTagsH3.className = 'description'
+        newTagMain.appendChild(newTagsH3);
+      }
+      
+      const removeLeftContent = document.getElementsByClassName('left-content')[0];
+      newTagMain.removeChild(removeLeftContent);
+
+      const centralizeRightContent = document.getElementsByClassName('right-content')[0];
+      centralizeRightContent.style.marginRight = 'auto';
+
+      const removeLastUl = document.getElementsByTagName('ul')[0];
+      removeLastUl.lastChild.remove();
+      removeLastUl.lastChild.remove();
     </script>
   </body>
 </html>
