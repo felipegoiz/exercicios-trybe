@@ -16,11 +16,9 @@ let createTitle = (title) => {
   return newTitle;
 };
 
-let createText = (title) => {
-  let newText = document.createElement("p");
-  newText.innerHTML = title;
-  return newtitle;
-};
+let createElementMain = document.createElement("main");
+createElementMain.className = "main";
+document.body.appendChild(createElementMain);
 
 let buildSectionCorDeFundo = () => {
   let sectionCorDeFundo = document.createElement("section");
@@ -53,7 +51,7 @@ let buildSectionCorDeFundo = () => {
     })
   );
 
-  document.body.appendChild(sectionCorDeFundo);
+  createElementMain.appendChild(sectionCorDeFundo);
 };
 buildSectionCorDeFundo();
 
@@ -78,7 +76,7 @@ let buildSectionCorDaFonte = () => {
     })
   );
 
-  document.body.appendChild(sectionCorDaFonte);
+  createElementMain.appendChild(sectionCorDaFonte);
 };
 buildSectionCorDaFonte();
 
@@ -89,44 +87,109 @@ let buildSectionTamanhoDaFonte = () => {
   sectionTamanhoDaFonte.appendChild(createTitle("Tamanho Da Fonte"));
   sectionTamanhoDaFonte.appendChild(
     createButton("8pt", () => {
-      document.body.className = "8Pt";
+      document.body.className = "pt8";
     })
   );
   sectionTamanhoDaFonte.appendChild(
     createButton("10pt", () => {
-      document.body.className = "10Pt";
+      document.body.className = "pt10";
     })
   );
   sectionTamanhoDaFonte.appendChild(
     createButton("12pt", () => {
-      document.body.className = "12Pt";
+      document.body.className = "pt12";
     })
   );
   sectionTamanhoDaFonte.appendChild(
     createButton("14pt", () => {
-      document.body.className = "14Pt";
+      document.body.className = "pt14";
     })
   );
   sectionTamanhoDaFonte.appendChild(
     createButton("20pt", () => {
-      document.body.className = "20Pt";
+      document.body.className = "pt20";
     })
   );
 
-  document.body.appendChild(sectionTamanhoDaFonte);
+  createElementMain.appendChild(sectionTamanhoDaFonte);
 };
 buildSectionTamanhoDaFonte();
 
-// let buildSectionText = () => {
-//   let sectionText = document.createElement("section");
-//   sectionText.className = "sectiontext";
+let buildSectionEspaLinhas = () => {
+  let sectionEspaLinhas = document.createElement("section");
+  sectionEspaLinhas.className = "espaeinhas";
 
-//   sectionText.appendChild(createText("Oi"));
-//   sectionText.className = "text";
+  sectionEspaLinhas.appendChild(createTitle("Espaçamento entre as linhas"));
+  sectionEspaLinhas.appendChild(
+    createButton("1", () => {
+      document.body.className = "line-height1";
+    })
+  );
+  sectionEspaLinhas.appendChild(
+    createButton("normal", () => {
+      document.body.className = "line-heightnormal";
+    })
+  );
+  sectionEspaLinhas.appendChild(
+    createButton("1.5", () => {
+      document.body.className = "line-height1e5";
+    })
+  );
+  sectionEspaLinhas.appendChild(
+    createButton("2.0", () => {
+      document.body.className = "line-height2";
+    })
+  );
+  sectionEspaLinhas.appendChild(
+    createButton("3.0", () => {
+      document.body.className = "line-height3";
+    })
+  );
 
-//   document.body.appendChild(sectionText);
-// };
-// buildSectionText();
+  createElementMain.appendChild(sectionEspaLinhas);
+};
+buildSectionEspaLinhas();
+
+let buildSectionTipoFonte = () => {
+  let sectionTipoFonte = document.createElement("section");
+  sectionTipoFonte.className = "tipofonte";
+
+  sectionTipoFonte.appendChild(createTitle("Tipo da fonte"));
+  sectionTipoFonte.appendChild(
+    createButton("Arial", () => {
+      document.body.className = "fontArial";
+    })
+  );
+  sectionTipoFonte.appendChild(
+    createButton("Times New Roman", () => {
+      document.body.className = "fontTimesNewRoman";
+    })
+  );
+
+  createElementMain.appendChild(sectionTipoFonte);
+};
+buildSectionTipoFonte();
+
+let createText = (title) => {
+  let newText = document.createElement("p");
+  newText.innerHTML = title;
+  return newText;
+};
+
+let buildSectionText = () => {
+  let sectionText = document.createElement("section");
+  sectionText.className = "sectiontext";
+
+  sectionText.appendChild(
+    createText(
+      `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
+    )
+  );
+  sectionText.className = "text";
+
+  document.body.appendChild(sectionText);
+};
+buildSectionText();
 
 // Toggle - pra usar futuramente
 //   if (!document.body.className.contains("blackBg")) {

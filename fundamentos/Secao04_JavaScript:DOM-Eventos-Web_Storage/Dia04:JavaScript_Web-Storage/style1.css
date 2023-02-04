@@ -1,4 +1,4 @@
-body {
+main {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
@@ -27,14 +27,56 @@ button {
   background-color: yellow;
 }
 
-.blackFontColor {
+.blackFontColor p{
   color: black;
 }
-
-.redFontColor {
+.redFontColor p{
   color: red;
 }
-
-.whiteFontColor {
+.whiteFontColor p{
   color: white;
+}
+
+.pt8 p{
+ font-size: 8px;
+}
+.pt10 p{
+ font-size: 10px;
+}
+.pt12 p{
+ font-size: 12px;
+}
+.pt14 p{
+ font-size: 14px;
+}
+.pt20 p{
+ font-size: 20px;
+}
+
+.line-height1 p{
+  line-height: 1;
+}
+.line-heightnormal p{
+  line-height: normal;
+}
+.line-height1e5 p{
+  line-height: 1.5;
+}
+.line-height2 p{
+  line-height: 2;
+}
+.line-height3 p{
+  line-height: 3;
+}
+
+.fontArial p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fontTimesNewRoman p{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text {
+  
+  font-size: xx-large;
 }
