@@ -26,3 +26,15 @@ button {
 .yellowBg {
   background-color: yellow;
 }
+
+.blackFontColor {
+  color: black;
+}
+
+.redFontColor {
+  color: red;
+}
+
+.whiteFontColor {
+  color: white;
+}

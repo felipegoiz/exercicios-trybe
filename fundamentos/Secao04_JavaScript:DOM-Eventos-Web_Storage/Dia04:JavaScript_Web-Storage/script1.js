@@ -16,6 +16,12 @@ let createTitle = (title) => {
   return newTitle;
 };
 
+let createText = (title) => {
+  let newText = document.createElement("p");
+  newText.innerHTML = title;
+  return newtitle;
+};
+
 let buildSectionCorDeFundo = () => {
   let sectionCorDeFundo = document.createElement("section");
   sectionCorDeFundo.className = "cordefundo";
@@ -52,41 +58,80 @@ let buildSectionCorDeFundo = () => {
 buildSectionCorDeFundo();
 
 let buildSectionCorDaFonte = () => {
-  let titleH2 = document.createElement("h2");
-  titleH2.innerHTML = "Cor da Fonte";
-
-  let buttonWhite = document.createElement("button");
-  buttonWhite.innerHTML = "White";
-
   let sectionCorDaFonte = document.createElement("section");
   sectionCorDaFonte.className = "cordafonte";
-  sectionCorDaFonte.appendChild(titleH2);
-  sectionCorDaFonte.appendChild(buttonWhite);
+
+  sectionCorDaFonte.appendChild(createTitle("Cor da Fonte"));
+  sectionCorDaFonte.appendChild(
+    createButton("Black", () => {
+      document.body.className = "blackFontColor";
+    })
+  );
+  sectionCorDaFonte.appendChild(
+    createButton("Red", () => {
+      document.body.className = "redFontColor";
+    })
+  );
+  sectionCorDaFonte.appendChild(
+    createButton("White", () => {
+      document.body.className = "whiteFontColor";
+    })
+  );
 
   document.body.appendChild(sectionCorDaFonte);
 };
 buildSectionCorDaFonte();
 
 let buildSectionTamanhoDaFonte = () => {
-  let titleH2 = document.createElement("h2");
-  titleH2.innerHTML = "Tamanho da Fonte";
-
-  let button8Pt = document.createElement("button");
-  button8Pt.innerHTML = "8pt";
-
   let sectionTamanhoDaFonte = document.createElement("section");
   sectionTamanhoDaFonte.className = "tamanhodafonte";
-  sectionTamanhoDaFonte.appendChild(titleH2);
-  sectionTamanhoDaFonte.appendChild(button8Pt);
+
+  sectionTamanhoDaFonte.appendChild(createTitle("Tamanho Da Fonte"));
+  sectionTamanhoDaFonte.appendChild(
+    createButton("8pt", () => {
+      document.body.className = "8Pt";
+    })
+  );
+  sectionTamanhoDaFonte.appendChild(
+    createButton("10pt", () => {
+      document.body.className = "10Pt";
+    })
+  );
+  sectionTamanhoDaFonte.appendChild(
+    createButton("12pt", () => {
+      document.body.className = "12Pt";
+    })
+  );
+  sectionTamanhoDaFonte.appendChild(
+    createButton("14pt", () => {
+      document.body.className = "14Pt";
+    })
+  );
+  sectionTamanhoDaFonte.appendChild(
+    createButton("20pt", () => {
+      document.body.className = "20Pt";
+    })
+  );
 
   document.body.appendChild(sectionTamanhoDaFonte);
 };
 buildSectionTamanhoDaFonte();
 
+// let buildSectionText = () => {
+//   let sectionText = document.createElement("section");
+//   sectionText.className = "sectiontext";
+
+//   sectionText.appendChild(createText("Oi"));
+//   sectionText.className = "text";
+
+//   document.body.appendChild(sectionText);
+// };
+// buildSectionText();
+
 // Toggle - pra usar futuramente
-//   if (!document.body.classList.contains("blackBg")) {
-//     document.body.classList.add("blackBg");
+//   if (!document.body.className.contains("blackBg")) {
+//     document.body.className.add("blackBg");
 //   } else {
-//     document.body.classList.remove("blackBg");
+//     document.body.className.remove("blackBg");
 //   }
 // })
