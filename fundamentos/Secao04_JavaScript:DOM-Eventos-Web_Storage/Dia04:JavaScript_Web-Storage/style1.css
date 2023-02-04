@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+button {
+  margin: 1px;
+  width: 80px;
+  display: block;
+}
+
+.whiteBg {
+  background-color: white;
+}
+
+.blackBg {
+  background-color: black;
+}
+.greenBg {
+  background-color: green;
+}
+.blueBg {
+  background-color: blue;
+}
+.yellowBg {
+  background-color: yellow;
+}
