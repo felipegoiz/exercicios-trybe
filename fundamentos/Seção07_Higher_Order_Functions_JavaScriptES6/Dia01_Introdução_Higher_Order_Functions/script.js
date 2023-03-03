@@ -91,4 +91,4 @@ const lotteryResult = (myNumber, callback) => {
   return callback(myNumber, number) ? 'Lucky day, you won!' : 'Try Again!';
 };
 
-console.log(lotteryResult(2, numberChecker));
+// console.log(lotteryResult(2, numberChecker));
