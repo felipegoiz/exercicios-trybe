@@ -1,17 +1,19 @@
-// let number = 5;
-// const symbol= '*';
-// let line = '';
+let jessica = 'jessica rios';
+let felipe = 'felipe goiz';
+const felipereverse = felipe.split('');
+console.log(felipereverse);
+// console.log(jessica.reverse());
 
-// for (let index = 0; index < number; index +=1) {
-//   line += symbol;
-// };
-
-let word = ['felipegoiz', 'felipe', 'jessica'];
-let sizeWord = 0
-
-for(let index = 0; index<word.length; index+=1){
-  if(word[index].length>sizeWord){
-  sizeWord = word[index];
-}
-}
-console.log(sizeWord);
+// function reverseWords(str) {
+//   const palavras = str.split(' ');
+//   const palavrasInvertidas = palavras.map((word) => {
+//     const letras = word.split('');
+//     const letrasInvertidas = letras.reverse();
+//     return letrasInvertidas.join('');
+//   });
+//   const fraseInvertida = palavrasInvertidas.join(' ');
+//   return fraseInvertida;
+// }
+// console.log(reverseWords('felipe goiz'));
+// "This is an example!" ==> "sihT si na !elpmaxe"
+// "double  spaces"      ==> "elbuod  secaps"
